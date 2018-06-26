@@ -1,0 +1,28 @@
+svg {
+    font-family: 'Teko', sans-serif;
+	background: #0D1019;
+	top: 0;
+	left: 50px;
+	width: 500px;
+    height: 200px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+#overlay path,
+#overlay circle {
+	fill: #69696911;
+	transition: fill .4s;
+	stroke: #0075F4;
+	stroke-opacity: 0;
+}
+
+#overlay .lit {
+	fill: #0075F4;
+	transition: fill .4s;
+	stroke-opacity: 1;
+}
+
+button {
+    float: right;
+}

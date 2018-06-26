@@ -1,0 +1,46 @@
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <a href="#">&#0135; Dashboard</a>
+    <a href="#" id="ch">&#0134; Widgets</a>
+    <a href="#">&#26D4; Mailbox</a>
+    <a href="#">&#262C; Tables</a>
+  </div>
+
+  <div id="main">
+<div class="up">
+  <span class="upText" style="font-size:18px;cursor:pointer;" (click)="openNav()">&#9776;</span>
+  <span class="upText">      Simple Dashboard</span>
+<button type="button" class="close" aria-label="Close" (click)="toggle()" >
+    <span aria-hidden="true">{{buttonName}}</span>
+  </button>
+</div>
+  <ng-container *ngIf="show">
+
+<div class="w-board">
+  <br>
+  <h4>Press the button, and something will happen</h4>
+  <br><br>
+
+  <!-- <div>
+    <app-timer></app-timer> 
+  </div> -->
+
+
+<!-- <div>
+  <app-pie-chart></app-pie-chart>
+</div>   -->
+
+
+
+<div>
+  <app-text-adder [widgets]="widgets"></app-text-adder>
+</div>
+
+</div>
+
+
+  </ng-container>
+
+</div>

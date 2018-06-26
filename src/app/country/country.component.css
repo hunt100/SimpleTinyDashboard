@@ -1,0 +1,39 @@
+.selected {
+    background-color: #CFD8DC !important;
+    color: white;
+  }
+  .countries {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    height: 3em;
+  }
+
+  .countries li {
+    width:20%;
+    cursor: pointer;
+    left: 0;
+    background-color: #EEE;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+  .countries li.selected:hover {
+    background-color: #BBD8DC !important;
+    color: white;
+  }
+  .countries li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: 50px;
+  }
+ 
+  .countries p {
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0.5em 0.7em;
+    background-color: #607D8B;
+    line-height: 1em;
+    text-align: center;
+    margin-right: 3em;
+    border-radius: 4px 0 0 4px;
+  }
