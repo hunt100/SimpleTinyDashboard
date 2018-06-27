@@ -21,25 +21,3 @@
     transform: scale(0.9);
     transition: all .01s ease; 
 }
-
-.HiddenClass {
-    background-color: #2E3341;
-    border: none;
-    color: #2E3341;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.HiddenClass:hover {
-    background-color: #2E3341;
-    border: none;
-    color: #2E3341;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
