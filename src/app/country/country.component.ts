@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { COUNTRIES } from "../mock-country";
 import { TESTS } from "../mock-test";
 
 @Component({
@@ -9,11 +8,12 @@ import { TESTS } from "../mock-test";
   styleUrls: ['./country.component.css']
 })
 export class CountryComponent implements OnInit {
-  countries = COUNTRIES;
   tests = TESTS;
+  
   constructor() { }
 
   ngOnInit() {
   }
+
 
 }

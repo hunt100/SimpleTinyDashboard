@@ -41,6 +41,7 @@ export class WBoardComponent implements OnInit {
 
   ngOnInit() {
     this.widgets = this.widgetService.getWidgets();
+    
   }
 
 }

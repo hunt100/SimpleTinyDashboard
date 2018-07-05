@@ -1,15 +1,16 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { COUNTRIES } from "../mock-country";
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { TESTS } from "../mock-test";
 
-import * as d3 from "d3";
-import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
+import * as d3 from "d3";   
 import { WidgetComponentInterface } from '../widget/widget.component';
 
 @Component({
   selector: 'app-pie-chart',
   templateUrl: './pie-chart.component.html',
-  styleUrls: ['./pie-chart.component.css']
+ // styleUrls: ['./pie-chart.component.css'],
+//   styles: [
+//   'svg {background-color: #0D1019;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;width: 960px;height: 500px;border-radius: 8px;} path.slice {stroke-width: 2px;}polyline {opacity: .3;stroke: rgb(70, 70, 70);stroke-width: 1px;fill: none;}line {opacity: .3;stroke: rgb(70, 70, 70);stroke-width: 1px;fill: none;} '
+//    ]
 })
 export class PieChartComponent implements OnInit,WidgetComponentInterface {
    @Input() data: any;
@@ -17,7 +18,7 @@ export class PieChartComponent implements OnInit,WidgetComponentInterface {
   constructor() { }
 
   ngOnInit() {
-    this.pieChartGenerate();
+    this.pieChartGenerate(); 
   }
 
   pieChartGenerate() {
@@ -33,11 +34,11 @@ export class PieChartComponent implements OnInit,WidgetComponentInterface {
 //   {"states":"Mongolia","value" : Math.random()},
 //   {"states":"India","value" : Math.random()},
 // ];
-
+  
   let data = TESTS;
 
 
-  let needData = COUNTRIES; // @Unused
+  
 
 /*
 * var backupData = []; - если значения(не в % соотношении ) потребуется в дальнейшем
@@ -384,7 +385,7 @@ export class PieChartComponent implements OnInit,WidgetComponentInterface {
           .attr('font-size', '1.2em')
           .attr("x", 320)
           .attr('y', -50)
-          .attr("fill","#E1E1E2")
+          .attr("fill","#E1E1E2")                   
           .text(data[4].states);
 
           svg.select(".squares")
@@ -589,7 +590,7 @@ export class PieChartComponent implements OnInit,WidgetComponentInterface {
   .attr("fill","#E1E1E2")
   .text(d3.format(".0f")(data[0].value + data[1].value + data[2].value + data[3].value + data[4].value) + " %");
   
-
+  
   }
 
 

@@ -1,20 +1,10 @@
-
 <h2>My Countries</h2>
 <ul class="countries d-flex d-inline-flex">
-  <li *ngFor="let country of countries" class="d-inline-flex  align-items-center mr-2">
-      <div class="card p-8" *ngIf="country">
-          <p  class="mb-0">{{country.name}} {{country.quanity}} {{country.percentage}}%</p> 
+    <h4>There are {{tests.length}} countries:</h4>
+  <li *ngFor="let test of tests" class="d-inline-flex  align-items-center mr-2">
+      <div class="card p-8" *ngIf="test">
+          <p  class="mb-0">{{test.states}}</p> 
     </div>
   </li>
 </ul>
-
-
-<!-- <h2>My Countries</h2>
-<ul class="countries d-flex d-inline-flex">
-  <li *ngFor="let test of tests" class="d-inline-flex  align-items-center mr-2">
-      <div class="card p-8" *ngIf="test">
-          <p  class="mb-0">{{test.states}} {{test.value}} {{test.percentage}}%</p> 
-    </div>
-  </li>
-</ul> -->
 

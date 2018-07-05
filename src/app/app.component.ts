@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 // import { AdService } from '../../legacy/ad.service';
 // import { AdItem } from '../../legacy/ad-item';
+
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Widget Board';
+    title = 'Widget Board';
   // ads: AdItem[];
   constructor (/*private adService: AdService,*/) {}
+
+
 
   ngOnInit() {
     //this.ads = this.adService.getAds();

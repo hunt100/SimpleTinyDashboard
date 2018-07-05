@@ -1,27 +1,3 @@
 
-  svg {
-    background-color: #0D1019;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    width: 960px;
-    height: 500px;
-    border-radius: 8px;
-  }
-  
-  path.slice {
-    stroke-width: 2px;
-  }
-  
-  polyline {
-    opacity: .3;
-    stroke: rgb(70, 70, 70);
-    stroke-width: 1px;
-    fill: none;
-  }
-  
-  line {
-    opacity: .3;
-    stroke: rgb(70, 70, 70);
-    stroke-width: 1px;
-    fill: none;
-  }
+
   
